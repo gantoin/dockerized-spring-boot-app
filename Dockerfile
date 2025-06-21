@@ -1,4 +1,4 @@
-FROM openjdk:11-jre-slim
+FROM openjdk:11.0.16-jre-slim
 COPY target/dockerized-spring-boot-app-0.0.1-SNAPSHOT.jar /usr/app/
 WORKDIR /usr/app
 RUN sh -c 'touch dockerized-spring-boot-app-0.0.1-SNAPSHOT.jar'
